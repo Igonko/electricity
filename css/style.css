@@ -1,0 +1,127 @@
+.main_wrapper {
+    background: url(../img/main_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.calc_block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30vw;
+    height: 22vw;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 15px;
+}
+.form_wrapper {
+    margin: 1vw;
+    position: relative;
+}
+input {
+    font-family: 'Lato', sans-serif;
+    width: 40%;
+    margin: 1vw;
+    position: relative;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    display: block;
+}
+.submit {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    padding: 0.5vw 2vw;
+    border-radius: 15px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.submit:hover {
+    background-color: #d0cccc;
+    transition: 0.3s linear;
+}
+.under_100 .day {
+    position: absolute;
+    bottom: 9vw;
+    left: 1vw;
+    width: 30%;
+    height: 1vw;
+    background: #fff;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+.under_100 .night {
+    position: absolute;
+    bottom: 5vw;
+    width: 30%;
+    left: 1vw;
+    height: 1vw;
+    background: #fff;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+.above_100 .day {
+    position: absolute;
+    bottom: 9vw;
+    right: 1vw;
+    width: 30%;
+    height: 1vw;
+    background: #fff;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+.above_100 .night {
+    position: absolute;
+    bottom: 5vw;
+    right: 1vw;
+    width: 30%;
+    height: 1vw;
+    background: #fff;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+.under_100_text {
+    position: absolute;
+    left: 3vw;
+}
+.above_100_text {
+    position: absolute;
+    right: 3vw;
+}
+.under_100_text,
+.above_100_text {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+.result_block {
+    position: absolute;
+    bottom: 1vw;
+    left: 0vw;
+    right: 0;
+    margin:  0 auto;
+    width: 40%;
+    height: 1vw;
+    background: #fff;
+    padding: 1vw;
+    font-family: 'Lato', sans-serif;
+    border-radius: 15px;
+}
+.result_number,
+.day_current,
+.night_current {
+    padding-left: 1vw;
+}

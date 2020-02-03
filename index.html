@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Расчет электроэнергии</title>
+</head>
+<body>
+
+<section class="main_wrapper">
+    <div class="calc_block">
+        <div class="form_wrapper">
+            <input type="text" class="T1" placeholder="Введи Т1">
+            <input type="text" class="T2" placeholder="Введи Т2">
+            <div class="submit">Расчитать</div>
+        </div>
+        <div class="under_100">
+            <span class="under_100_text">До 100 КвТ</span>
+            <div class="day">День: <span class="under_100_day_current">0 грн</span></div>
+            <div class="night">Ночь: <span class="under_100_night_current">0 грн</span></div>
+        </div>
+        <div class="above_100">
+            <span class="above_100_text">После 100 КвТ</span>
+            <div class="day">День: <span class="above_100_day_current">0 грн</span></div>
+            <div class="night">Ночь: <span class="above_100_night_current">0 грн</span></div>
+        </div>
+
+        <div class="result_block">К оплате:<span class="result_number">0 грн</span></div>
+    </div>
+</section>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
