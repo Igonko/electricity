@@ -23,16 +23,18 @@
     position: relative;
 }
 input {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     width: 40%;
     margin: 1vw;
+    margin-left: 0;
     position: relative;
     left: 0;
     right: 0;
     border-radius: 15px;
     outline: none;
-    padding-left: 10px;
+    padding: 5px 10px;
     display: block;
+    font-size: 1vw;
 }
 .submit {
     position: absolute;
@@ -41,13 +43,18 @@ input {
     padding: 0.5vw 2vw;
     border-radius: 15px;
     background-color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     cursor: pointer;
     transition: 0.3s linear;
+    font-size: 1vw;
 }
 .submit:hover {
     background-color: #d0cccc;
     transition: 0.3s linear;
+}
+.above_100,
+.under_100 {
+    font-size: 1vw;
 }
 .under_100 .day {
     position: absolute;
@@ -56,9 +63,12 @@ input {
     width: 30%;
     height: 1vw;
     background: #fff;
-    padding: 1vw;
-    font-family: 'Lato', sans-serif;
+    padding: 0.7vw;
+    font-family: "Lato", sans-serif;
     border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .under_100 .night {
     position: absolute;
@@ -67,9 +77,12 @@ input {
     left: 1vw;
     height: 1vw;
     background: #fff;
-    padding: 1vw;
-    font-family: 'Lato', sans-serif;
+    padding: 0.7vw;
+    font-family: "Lato", sans-serif;
     border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .above_100 .day {
     position: absolute;
@@ -78,9 +91,12 @@ input {
     width: 30%;
     height: 1vw;
     background: #fff;
-    padding: 1vw;
-    font-family: 'Lato', sans-serif;
+    padding: 0.7vw;
+    font-family: "Lato", sans-serif;
     border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .above_100 .night {
     position: absolute;
@@ -89,9 +105,12 @@ input {
     width: 30%;
     height: 1vw;
     background: #fff;
-    padding: 1vw;
-    font-family: 'Lato', sans-serif;
+    padding: 0.7vw;
+    font-family: "Lato", sans-serif;
     border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .under_100_text {
     position: absolute;
@@ -103,7 +122,7 @@ input {
 }
 .under_100_text,
 .above_100_text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #fff;
     font-weight: 700;
 }
@@ -112,16 +131,146 @@ input {
     bottom: 1vw;
     left: 0vw;
     right: 0;
-    margin:  0 auto;
+    margin: 0 auto;
     width: 40%;
     height: 1vw;
     background: #fff;
     padding: 1vw;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .result_number,
-.day_current,
-.night_current {
+.under_100_day_current,
+.under_100_night_current,
+.above_100_day_current,
+.above_100_night_current {
     padding-left: 1vw;
+}
+.result_block {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1366px) {
+    .calc_block {
+        width: 33vw;
+        height: 25vw;
+    }
+    input,
+    .submit,
+    .under_100,
+    .above_100,
+    .result_block {
+        font-size: 1.5vw;
+    }
+    .under_100 .day,
+    .under_100 .night,
+    .above_100 .day,
+    .above_100 .night {
+        width: 40%;
+    }
+    .result_block {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .calc_block {
+        width: 70vw;
+        height: 50vw;
+    }
+    .form_wrapper {
+        margin-bottom: 4vw;
+    }
+    input,
+    .submit,
+    .under_100,
+    .above_100,
+    .result_block {
+        font-size: 3.5vw;
+    }
+    .under_100 .day,
+    .under_100 .night,
+    .above_100 .day,
+    .above_100 .night {
+        width: 40%;
+        padding: 1.7vw;
+    }
+    .under_100 .day,
+    .above_100 .day {
+        bottom: 18vw;
+    }
+    .under_100 .night,
+    .above_100 .night {
+        bottom: 11vw;
+    }
+    .result_block {
+        padding: 2.5vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    .calc_block {
+        width: 70vw;
+        height: 100vw;
+        top: 20%;
+        padding: 1vw;
+    }
+    .submit {
+        position: absolute;
+        right: 0%;
+        padding: 2vw 2vw;
+        font-size: 4.7vw;
+        top: 25%;
+    }
+    input {
+        width: 50%;
+    }
+    .under_100_text, 
+    .above_100_text {
+        font-size: 4vw;
+    }
+    .above_100_text {
+        bottom: 40vw;
+        left: 3vw;
+        right: unset;
+    }
+    .under_100 .day {
+        bottom: 62vw;
+        width: 90%;
+        font-size: 5vw;
+        height: auto;
+    }
+    .under_100 .night {
+        bottom: 52vw;
+        width: 90%;
+        font-size: 5vw;
+        height: auto;
+    }
+    
+    .above_100 .day {
+        width: 90%;
+        font-size: 5vw;
+        height: auto;
+        right: unset;
+        left: 1vw;
+        bottom: 28vw;
+    }
+    .above_100 .night {
+        width: 90%;
+        font-size: 5vw;
+        height: auto;
+        right: unset;
+        left: 1vw;
+        bottom: 18vw;
+    }
+    .result_block {
+        font-size: 4.5vw;
+        height: auto;
+        bottom: 3vw;
+        width: max-content;
+        max-width: 80%;
+    }
 }
