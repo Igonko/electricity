@@ -58,9 +58,9 @@ input {
 }
 .under_100 .day {
     position: absolute;
-    bottom: 9vw;
-    left: 1vw;
-    width: 30%;
+    bottom: 10vw;
+    left: 50%;
+    width: 40%;
     height: 1vw;
     background: #fff;
     padding: 0.7vw;
@@ -69,12 +69,13 @@ input {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transform: translateX(-50%);
 }
 .under_100 .night {
     position: absolute;
-    bottom: 5vw;
-    width: 30%;
-    left: 1vw;
+    bottom: 6vw;
+    width: 40%;
+    left: 50%;
     height: 1vw;
     background: #fff;
     padding: 0.7vw;
@@ -83,45 +84,13 @@ input {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-.above_100 .day {
-    position: absolute;
-    bottom: 9vw;
-    right: 1vw;
-    width: 30%;
-    height: 1vw;
-    background: #fff;
-    padding: 0.7vw;
-    font-family: "Lato", sans-serif;
-    border-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.above_100 .night {
-    position: absolute;
-    bottom: 5vw;
-    right: 1vw;
-    width: 30%;
-    height: 1vw;
-    background: #fff;
-    padding: 0.7vw;
-    font-family: "Lato", sans-serif;
-    border-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    transform: translateX(-50%);
 }
 .under_100_text {
     position: absolute;
     left: 3vw;
 }
-.above_100_text {
-    position: absolute;
-    right: 3vw;
-}
-.under_100_text,
-.above_100_text {
+.under_100_text {
     font-family: "Lato", sans-serif;
     color: #fff;
     font-weight: 700;
@@ -144,9 +113,7 @@ input {
 }
 .result_number,
 .under_100_day_current,
-.under_100_night_current,
-.above_100_day_current,
-.above_100_night_current {
+.under_100_night_current {
     padding-left: 1vw;
 }
 .result_block {
@@ -161,14 +128,11 @@ input {
     input,
     .submit,
     .under_100,
-    .above_100,
     .result_block {
         font-size: 1.5vw;
     }
     .under_100 .day,
-    .under_100 .night,
-    .above_100 .day,
-    .above_100 .night {
+    .under_100 .night{
         width: 40%;
     }
     .result_block {
@@ -193,18 +157,14 @@ input {
         font-size: 3.5vw;
     }
     .under_100 .day,
-    .under_100 .night,
-    .above_100 .day,
-    .above_100 .night {
+    .under_100 .night{
         width: 40%;
         padding: 1.7vw;
     }
-    .under_100 .day,
-    .above_100 .day {
+    .under_100 .day {
         bottom: 18vw;
     }
-    .under_100 .night,
-    .above_100 .night {
+    .under_100 .night {
         bottom: 11vw;
     }
     .result_block {
@@ -228,8 +188,7 @@ input {
     input {
         width: 50%;
     }
-    .under_100_text, 
-    .above_100_text {
+    .under_100_text {
         font-size: 4vw;
     }
     .above_100_text {
@@ -248,23 +207,6 @@ input {
         width: 90%;
         font-size: 5vw;
         height: auto;
-    }
-    
-    .above_100 .day {
-        width: 90%;
-        font-size: 5vw;
-        height: auto;
-        right: unset;
-        left: 1vw;
-        bottom: 28vw;
-    }
-    .above_100 .night {
-        width: 90%;
-        font-size: 5vw;
-        height: auto;
-        right: unset;
-        left: 1vw;
-        bottom: 18vw;
     }
     .result_block {
         font-size: 4.5vw;
